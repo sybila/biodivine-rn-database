@@ -1,0 +1,18 @@
+[project]
+name = "biodivne-rn-database"
+version = "0.1.0"
+description = "A simple collection of gene regulations from various sources."
+readme = "README.md"
+requires-python = ">=3.7"
+
+[project.scripts]
+biodivine-rn-database = "biodivine_rn_database.cli:__main__"
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=43.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["biodivine_rn_database"]
